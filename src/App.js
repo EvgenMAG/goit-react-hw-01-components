@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+     return  <div className="profile">
+  <div className="description">
+    <img
+      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+      alt="Аватар пользователя"
+      className="avatar"
+    />
+    <p className="name">Petra Marica</p>
+    <p className="tag">@pmarica</p>
+    <p className="location">Salvador, Brasil</p>
+  </div>
+
+  <ul className="stats">
+    <li>
+      <span className="label">Followers</span>
+      <span className="quantity">1000</span>
+    </li>
+    <li>
+      <span className="label">Views</span>
+      <span className="quantity">2000</span>
+    </li>
+    <li>
+      <span className="label">Likes</span>
+      <span className="quantity">{200+909990000}</span>
+    </li>
+  </ul>
+</div>
+
 }
 
-export default App;
+export default App
