@@ -1,6 +1,6 @@
 import React from "react"
 
-import Profile from "./components/profile-social/profile.js"
+// import Profile from "./components/profile-social/profile.js"
 import user from "./components/profile-social/users.json"
 import Statistics from "./components/Statistics/statistics.js"
 import statisticalData from "./components/Statistics/StatisticTemp/statistical-data.json"
