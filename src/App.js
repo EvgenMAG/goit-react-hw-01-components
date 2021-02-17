@@ -1,35 +1,41 @@
 import React from "react"
 
+import Profile from "./components/profile-social/profile.js"
+import user from "./components/profile-social/users.json"
+import Statistics from "./components/Statistics/statistics.js"
+import statisticalData from "./components/Statistics/StatisticTemp/statistical-data.json"
+import FriendList from "./components/friend-list/FriendList"
+import friends from "./components/friend-list/friends.json";
+import TransactionHistory from "./components/transactions-history/transfer-history"
+import transactions from "./components/transactions-history/transactions.json"
+
 
 const App = () => {
-     return  <div className="profile">
-  <div className="description">
-    <img
-      src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
-      alt="Аватар пользователя"
-      className="avatar"
-    />
-    <p className="name">Petra Marica</p>
-    <p className="tag">@pmarica</p>
-    <p className="location">Salvador, Brasil</p>
-  </div>
-
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">1000</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">2000</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{200+909990000}</span>
-    </li>
-  </ul>
-</div>
-
-}
+  return (
+    <>
+    <div>
+      <Profile
+  name={user.name}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+      />
+    </div>
+    <div>
+       <Statistics title="Upload stats" stats={statisticalData} />
+      </div>
+      <div>
+        <Statistics stats={statisticalData} />
+      </div>
+      <div>
+         <FriendList friends={friends} />
+      </div>
+      <div>
+        <TransactionHistory items={transactions} />
+      </div>
+      </>
+  );
+};
 
 export default App
