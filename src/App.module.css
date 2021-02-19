@@ -1,0 +1,11 @@
+.blocks{
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto
+}
+.title{
+    text-align: center;
+    color: tomato;
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+.stat__list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    border: 1px solid black;
+    width: 50px
+}
+.label {
+   font-weight: 700;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.percentage{
+     text-align: center;
+}

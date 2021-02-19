@@ -1,0 +1,17 @@
+.history {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: none;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgb(164, 241, 181);
+}
+
+.title {
+  padding: 10px;
+  border: solid 1px grey;
+}
+
+.title__container {
+  background-color: rgb(134, 134, 230);
+}

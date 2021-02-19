@@ -1,17 +1,20 @@
 import React from "react"
 import PropTypes from 'prop-types';
+import s from "./Transaction-row.module.css"
 
 const TransactionRow = ({ figures }) => (
+    <>
+       
     <tbody>
         {figures.map(({id,type,amount,currency}) => (
                 <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={s.info}>{type}</td>
+      <td className={s.info}>{amount}</td>
+      <td className={s.info}>{currency}</td>
     </tr>             
             ))}     
     </tbody>
-    
+    </>
 
 )
 
